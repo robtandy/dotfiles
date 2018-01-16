@@ -36,7 +36,7 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'history-substring-search' \
-  'zsh-syntax-highlighting' \
+  'syntax-highlighting' \
   'prompt'
 
 #
@@ -163,7 +163,7 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #
 # Syntax Highlighting
 #
-
+zstyle ':prezto:module:syntax-highlighting' color 'yes'
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
  zstyle ':prezto:module:syntax-highlighting' highlighters \
