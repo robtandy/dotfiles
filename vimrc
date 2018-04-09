@@ -42,3 +42,6 @@ set tw=79
 color dracula
 
 autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
+" remove whitespace upon save
+autocmd BufWritePre * :%s/\s\+$//e
