@@ -7,8 +7,16 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'dracula/vim'
 
-Plugin 'nathanaelkane/vim-indent-guides' 
+"Plugin 'altercation/vim-colors-solarized'
+"let g:solarized_termcolors=256
+"let g:solarized_termtrans=1
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 let g:indent_guides_start_level = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
@@ -18,15 +26,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=7
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
 
-"Plugin 'flazz/vim-colorschemes'
-Plugin 'dracula/vim'
-
-"Plugin 'altercation/vim-colors-solarized'
-"let g:solarized_termcolors=256
-"let g:solarized_termtrans=1
-
-call vundle#end()            " required
-filetype plugin indent on    " required
 
 "set t_Co=256
 syntax on
